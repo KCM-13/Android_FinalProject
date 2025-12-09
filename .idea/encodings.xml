@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/gangbuk_care.csv" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/gangbuk_facility.csv" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/jongno_care.csv" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/jongno_facility.csv" charset="UTF-8" />
+  </component>
+</project>

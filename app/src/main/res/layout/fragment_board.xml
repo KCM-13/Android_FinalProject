@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 상단 바 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp">
+
+        <!-- 왼쪽 텍스트 -->
+        <TextView
+            android:id="@+id/text_board_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이용자 후기 게시판"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- 오른쪽 작성 버튼 -->
+        <ImageButton
+            android:id="@+id/btn_write_post"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_create"
+            android:contentDescription="글쓰기 버튼" />
+
+    </RelativeLayout>
+
+    <!-- 게시글 RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp"
+        android:contentDescription="이용자 후기 리스트" />
+</LinearLayout>

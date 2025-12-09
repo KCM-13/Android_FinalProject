@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/item_border">
+
+    <!-- 기관명 -->
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="기관명"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- 전화 아이콘 -->
+    <ImageButton
+        android:id="@+id/btn_call"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_call"
+        android:contentDescription="전화 걸기" />
+
+    <!-- 지도 아이콘 -->
+    <ImageButton
+        android:id="@+id/btn_map"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_map"
+        android:contentDescription="지도 보기" />
+
+    <!-- 즐겨찾기 아이콘 -->
+    <ImageButton
+        android:id="@+id/btn_favorite"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_favorite_border"
+        android:contentDescription="즐겨찾기" />
+
+</LinearLayout>

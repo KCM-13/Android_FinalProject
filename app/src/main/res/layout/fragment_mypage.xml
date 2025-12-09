@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <!-- 동그란 프로필 원 -->
+    <TextView
+        android:id="@+id/profileCircle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="홍"
+        android:textSize="36sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/circle_background"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 이름 텍스트 -->
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="김채민"
+        android:textSize="20sp"
+        android:textColor="#000000" />
+
+    <!-- 즐겨찾기 목록-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_favorites"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="24dp"
+        />
+
+</LinearLayout>

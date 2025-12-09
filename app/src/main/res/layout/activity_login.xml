@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 1. 애니메이션 타이틀 -->
+    <TextView
+        android:id="@+id/titleText"
+        android:text="따뜻한 연결"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:visibility="visible" />
+
+    <!-- 2. 로그인 화면 내용 -->
+    <LinearLayout
+        android:id="@+id/loginLayout"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:visibility="gone"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <!-- 안녕하세요 -->
+        <TextView
+            android:text="안녕하세요"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- 이메일 입력 -->
+        <EditText
+            android:id="@+id/emailEditText"
+            android:hint="이메일"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 비밀번호 입력 -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 로그인 버튼 -->
+        <Button
+            android:id="@+id/googleLoginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFBDAE"
+            android:textColor="#3E3A39"
+            android:layout_marginTop="24dp"
+            android:text="Google 계정으로 로그인" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:text="로그인"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFBDAE"
+            android:textColor="#3E3A39" />
+
+        <!-- 회원가입 버튼 -->
+        <Button
+            android:id="@+id/signupButton"
+            android:text="회원가입"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFBDAE"
+            android:textColor="#3E3A39" />
+
+        <!-- 자동 로그인 -->
+        <CheckBox
+            android:id="@+id/autoLoginCheckbox"
+            android:text="자동 로그인"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

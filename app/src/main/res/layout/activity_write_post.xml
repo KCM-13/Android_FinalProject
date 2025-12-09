@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 제목 입력 -->
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="제목"
+        android:inputType="text"
+        android:textSize="18sp"
+        android:padding="8dp" />
+
+    <!-- 작성자 선택 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="작성자:"
+            android:layout_gravity="center_vertical"
+            android:textSize="17sp"
+            android:layout_marginEnd="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:entries="@array/writer_options"/>
+    </LinearLayout>
+
+    <!-- 시설명 입력 -->
+    <EditText
+        android:id="@+id/edit_facility"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="시설명"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- 내용 입력 -->
+    <EditText
+        android:id="@+id/edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="내용을 입력하세요"
+        android:gravity="top"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/editbox_background_normal" />
+
+    <!-- 작성 완료 버튼 -->
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="작성 완료"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

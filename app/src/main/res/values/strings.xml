@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="navigation_drawer_open">메뉴 열기</string>
+    <string name="navigation_drawer_close">메뉴 닫기</string>
+    <string name="label_select_region">검색할 지역을 선택하세요.</string>
+    <string name="label_select_type">원하는 복지 기관을 선택하세요.</string>
+    <string name="radio_care">돌봄 지원 기관</string>
+    <string name="radio_facility">복지관/이용시설</string>
+    <string name="btn_search">검색</string>
+    <string name="desc_select_district">지역 선택 스피너</string>
+    <string name="desc_search_button">복지기관 검색 버튼</string>
+    <string name="desc_recycler_view">복지기관 리스트</string>
+    <string-array name="writer_options">
+        <item>내 이름</item>
+        <item>익명</item>
+    </string-array>
+
+    <string name="default_web_client_id">199492600633-0mrl6pj2simou83qin1nklja38rkrtv0.apps.googleusercontent.com</string>
+</resources>
